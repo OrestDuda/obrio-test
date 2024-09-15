@@ -1,0 +1,24 @@
+services:
+  db:
+    build: .
+    container_name: postgres_db
+    ports:
+      - '5432:5432'
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydatabase
+
+  redis:
+    image: 'redis:6-alpine'
+    container_name: redis_bullmq
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis_data:/data
+
+volumes:
+  db_data:
+  redis_data:
