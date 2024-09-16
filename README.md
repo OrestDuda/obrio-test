@@ -1,6 +1,6 @@
 # OBRIO-test
 
-## Desctiption
+## Description
 
 This project is built with NestJS, TypeORM, and BullMQ. It includes services for managing users, offers, and purchases, with integration for sending reports via queues using Redis.
 
@@ -70,3 +70,9 @@ To run unit tests:
 ```bash
 npm run test
 ```
+
+## Notes
+
+У файлі purchases.service.ts для спрощення я додав два повідомлення в черги, але ідеальним рішенням було б надсилати одну подію та обгорнути цей процес у транзакцію, щоб гарантувати, що повідомлення буде точно відправлено. З точки зору кращих практик, доцільніше було б реалізувати outbox pattern.
+
+Також варто зазначити, що BullMQ намагається дотримуватись принципу "exactly once" для доставки повідомлень, але в гіршому випадку може забезпечити "at least once" доставку. У моєму рішенні я виходжу з припущення, що зовнішні сервіси, на які надсилаються звіти, є ідемпотентними, тобто можуть обробляти дублікати повідомлень без негативних наслідків.
