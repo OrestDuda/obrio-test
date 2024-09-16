@@ -5,9 +5,9 @@ import { BullModule } from '@nestjs/bull';
 import { User } from 'entities/user.entity';
 import { Offer } from 'entities/offer.entity';
 import { Purchase } from 'entities/purchase.entity';
-import { UsersModule } from 'users/users.module';
-import { PurchasesModule } from 'purchases/purchases.module';
-import { OffersModule } from 'offers/offers.module';
+import { UsersModule } from 'controllers/users/users.module';
+import { PurchasesModule } from 'controllers/purchases/purchases.module';
+import { OffersModule } from 'controllers/offers/offers.module';
 import { AstrologyReportProcessor } from 'processors/astrology-report.processor';
 import { AnalyticsReportProcessor } from 'processors/analytics-report.processor';
 

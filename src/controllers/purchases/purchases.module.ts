@@ -5,8 +5,8 @@ import { BullModule } from '@nestjs/bull';
 import { Purchase } from 'entities/purchase.entity';
 import { User } from 'entities/user.entity';
 import { Offer } from 'entities/offer.entity';
-import { PurchasesController } from 'purchases/purchases.controller';
-import { PurchasesService } from 'purchases/purchases.service';
+import { PurchasesController } from 'controllers/purchases/purchases.controller';
+import { PurchasesService } from 'controllers/purchases/purchases.service';
 import {
   ANALYTICS_REPORT_QUEUE_NAME,
   ASTROLOGY_REPORT_QUEUE_NAME,

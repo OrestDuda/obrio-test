@@ -10,7 +10,7 @@ import { Queue } from 'bullmq';
 import {
   CreatePurchaseRequestDto,
   CreatePurchaseResponseDto,
-} from 'purchases/purchases.dto';
+} from 'controllers/purchases/purchases.dto';
 import {
   ANALYTICS_REPORT_JOB_NAME,
   ASTROLOGY_REPORT_JOB_NAME,

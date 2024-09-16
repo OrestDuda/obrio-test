@@ -6,7 +6,7 @@ import { Offer } from 'entities/offer.entity';
 import {
   CreateOfferRequestDto,
   CreateOfferResponseDto,
-} from 'offers/offers.dto';
+} from 'controllers/offers/offers.dto';
 
 const mockOffersRepository = () => ({
   save: jest.fn(),

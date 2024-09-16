@@ -17,7 +17,7 @@ import {
 import {
   CreatePurchaseRequestDto,
   CreatePurchaseResponseDto,
-} from 'purchases/purchases.dto';
+} from 'controllers/purchases/purchases.dto';
 
 @Injectable()
 export class PurchasesService {

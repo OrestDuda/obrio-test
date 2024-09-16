@@ -1,9 +1,9 @@
 import { Controller, Post, Body } from '@nestjs/common';
-import { PurchasesService } from 'purchases/purchases.service';
+import { PurchasesService } from 'controllers/purchases/purchases.service';
 import {
   CreatePurchaseRequestDto,
   CreatePurchaseResponseDto,
-} from 'purchases/purchases.dto';
+} from 'controllers/purchases/purchases.dto';
 
 @Controller('purchases')
 export class PurchasesController {

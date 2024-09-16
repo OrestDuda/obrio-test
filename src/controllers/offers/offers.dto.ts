@@ -1,4 +1,4 @@
-import { IsString, IsNotEmpty, IsDecimal, IsPositive } from 'class-validator';
+import { IsString, IsNotEmpty, IsPositive } from 'class-validator';
 
 export class CreateOfferRequestDto {
   @IsString()

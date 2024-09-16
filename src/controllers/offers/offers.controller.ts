@@ -1,9 +1,9 @@
 import { Controller, Post, Body } from '@nestjs/common';
-import { OffersService } from 'offers/offers.service';
+import { OffersService } from 'controllers/offers/offers.service';
 import {
   CreateOfferRequestDto,
   CreateOfferResponseDto,
-} from 'offers/offers.dto';
+} from 'controllers/offers/offers.dto';
 
 @Controller('offers')
 export class OffersController {
